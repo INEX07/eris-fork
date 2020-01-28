@@ -36,6 +36,17 @@ bot.on("messageCreate", (msg) => { // When a message is created
             }
         });
     }
+    if(msg.content === "!embed2") { // embed builder
+        const embed = new Eris.Embed()
+            .setTitle("I'm an embed!")
+            .setDescription("Here is some more info, with **awesome** formatting.\nPretty *neat*, huh?")
+            .setAuthor(msg.author.username, msg.author.avatarURL)
+            .setColor(0x008000)
+            .addField("Some extra info.", "Some extra value.", true)
+            .addField("Some more extra info.", "Another extra value.", true)
+            .setFooter("Created with Eris.");
+        bot.createMessage(msg.channel.id, embed);
+    }
 });
 
 bot.connect(); // Get the bot to connect to Discord
