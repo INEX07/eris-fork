@@ -15,6 +15,7 @@ export const {
   Command,
   CommandClient,
   Constants,
+  Embed,
   ExtendedUser,
   GroupChannel,
   Guild,
