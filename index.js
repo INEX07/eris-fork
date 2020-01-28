@@ -16,6 +16,7 @@ Eris.Collection = require("./lib/util/Collection");
 Eris.Command = require("./lib/command/Command");
 Eris.CommandClient = require("./lib/command/CommandClient");
 Eris.Constants = require("./lib/Constants");
+Eris.Embed = require("./lib/Embed");
 Eris.ExtendedUser = require("./lib/structures/ExtendedUser");
 Eris.GroupChannel = require("./lib/structures/GroupChannel");
 Eris.Guild = require("./lib/structures/Guild");
